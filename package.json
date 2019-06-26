@@ -1,0 +1,11 @@
+{
+  "name": "array-join",
+  "version": "1.0.0",
+  "description": "Join arrays into single array, remove duplicates and sort based on modified date",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
