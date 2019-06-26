@@ -12,7 +12,7 @@ test('returns empty array for several empty arrays', () => {
     expect(joinArrays([], [])).toEqual([]);
 });
 
-test('returns single array ascendingly sorted by "lastModified" for single array', () => {
+test('returns single array in ascending order sorted by "lastModified", for single array', () => {
     const sourceArray = [
         { lastModified: new Date(2000, 4, 1) },
         { lastModified: new Date(1000, 5, 1) },
@@ -43,7 +43,7 @@ test('returns array with duplicates removed', () => {
     expect(joinArrays(sourceArray)).toEqual(expectedResultArray);
 });
 
-test('returns single array ascendingly sorted by "lastModified" for multiple arrays', () => {
+test('returns single array in ascending order sorted by "lastModified" property, for multiple arrays', () => {
     const sourceArray1 = [
         { lastModified: new Date(2000, 4, 1) },
         { lastModified: new Date(1000, 5, 1) },
@@ -71,7 +71,7 @@ test('returns single array ascendingly sorted by "lastModified" for multiple arr
     expect(joinArrays(sourceArray1, sourceArray2, sourceArray3)).toEqual(expectedResultArray);
 });
 
-test('returns single array ascendingly sorted by "lastModified" for multiple arrays, removing duplicates', () => {
+test('returns single array in ascending order sorted by "lastModified", for multiple arrays, removing duplicates', () => {
     const duplicateObject = { lastModified: new Date(2000, 4, 1) };
 
     const sourceArray1 = [
